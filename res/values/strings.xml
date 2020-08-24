@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Safe Drive App</string>
+    <string name="metric_units">Metric Units</string>
+    <string name="button">Button</string>
+    <string name="speed">Speed</string>
+    <string name="_80_km_hr_n_speed_limit">80 km/hr \n Speed Limit</string>
+    <string name="bump_ahead">Bump Ahead</string>
+    <string name="call_and_text_n_barred">Call and Text\n Barred</string>
+    <string name="calls_and_texts_n_barred">Calls and Texts \n Barred</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_safe_drive_map">Map</string>
+    <string name="safe_drive_app">SAFE DRIVE APP</string>
+    <string name="handsfree_driving_safety_app">HandsFree Driving Safety App</string>
+    <string name="_0_km_hr">0 km/hr</string>
+    <string name="calls_and_texts_barred">CALLS AND TEXTS BARRED</string>
+    <string name="map">Map</string>
+    <string name="nCurrentSpeed">nCurrentSpeed</string>
+</resources>

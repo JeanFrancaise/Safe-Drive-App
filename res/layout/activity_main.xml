@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#152F47"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/launchImageView"
+        android:layout_width="270dp"
+        android:layout_height="320dp"
+        android:layout_marginStart="367dp"
+        android:layout_marginTop="530dp"
+        android:background="@drawable/jean"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="100dp"
+        android:onClick="startApp"
+        android:scrollbarDefaultDelayBeforeFade="400"
+        android:scrollbarFadeDuration="250"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/continueRelativeLayout"
+        app:layout_constraintEnd_toStartOf="@+id/continueRelativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="1080dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/seaweedscriptregular"
+        android:text="@string/handsfree_driving_safety_app"
+        android:textColor="#15F620"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/continueRelativeLayout"
+        app:layout_constraintEnd_toStartOf="@+id/continueRelativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="1000dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/digitalfont"
+        android:text="@string/safe_drive_app"
+        android:textColor="#C6EC40"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/continueRelativeLayout"
+        app:layout_constraintEnd_toStartOf="@+id/continueRelativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/continueRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FBFBF9"
+        android:backgroundTint="#FFC107"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/my_button_bg"
+            android:fontFamily="@font/digitalfont"
+            android:text="@string/_0_km_hr"
+            android:textAlignment="textStart"
+            android:textColor="#319C35"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="145dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="320dp"
+            android:background="@drawable/my_button_bg"
+            android:fontFamily="monospace"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="137dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="450dp"
+            android:background="@drawable/my_button_bg"
+            android:fontFamily="monospace"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="145dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="450dp"
+            android:background="@drawable/my_button_bg"
+            android:fontFamily="monospace"
+            android:text="@string/calls_and_texts_barred"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="450dp"
+            android:fontFamily="monospace"
+            android:paddingStart="18dp"
+            android:paddingTop="18dp"
+            android:text="@string/bump_ahead"
+            android:textAlignment="center"
+            android:textColor="#151414"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textViewButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="330dp"
+            android:fontFamily="monospace"
+            android:paddingStart="18dp"
+            android:paddingTop="18dp"
+            android:text="@string/bump_ahead"
+            android:textAlignment="center"
+            android:textColor="#151414"
+            android:textSize="13sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/sw_metric"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="570dp"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/metric_units" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
